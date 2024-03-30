@@ -19,7 +19,6 @@ export async function getData(query) {
   try {
     let url = `${BASE_URL}?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=15`;
     const responce = await axios.get(url);
-    console.log(url);
     increasePage();
     return responce;
   } catch (error) {

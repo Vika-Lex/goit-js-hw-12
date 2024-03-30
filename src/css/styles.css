@@ -125,8 +125,8 @@ img {
   display: none;
 }
 
-.btn-load_more {
-  margin: 0 auto;
+.load_more-container {
+  text-align: center;
 }
 
 .btn-load_more-hidden {

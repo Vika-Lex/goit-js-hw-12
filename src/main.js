@@ -29,7 +29,6 @@ async function handleSubmit(event) {
   refs.spinner.classList.remove('hidden');
 
   const res = await getData(query);
-  console.log(res.data);
   if (res.data.hits.length === 0) {
     iziToast.show({
       message:

@@ -1,8 +1,8 @@
-export function creatMarkup(arr) {
+export function createMarkup(arr) {
   return arr
     .map(element => {
       return `
-      <li>
+      <li class="js-gallery-item">
       <a href="${element.largeImageURL}" alt="${element.tags}">
       <img width="300" src="${element.webformatURL}" alt="${element.tags}"/>
       <ul class="gallery__description-list gallery-description-list">
